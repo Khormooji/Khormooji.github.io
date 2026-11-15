@@ -29,7 +29,7 @@
   "alumniOf": [
     {"@type": "CollegeOrUniversity", "name": "Islamic Azad University, Isfahan (Khorasgan) Branch"},
     {"@type": "CollegeOrUniversity", "name": "Tarbiat Modares University"},
-    {"@type": "CollegeOrUniversity", "name": "Islamic Azad University, Mobarakeh Branch"},
+    {"@type": "CollegeOrUniversity", "name": "Islamic Azad University, Mobarakeh Branch"}
   ],
   "knowsAbout": ["Information technology management", "Futures studies", "Technology roadmapping", "IT roadmapping", "IT auditing", "Knowledge management", "IT risk assessment", "Information security"],
   "identifier": [
@@ -51,6 +51,25 @@ a:focus-visible,button:focus-visible{outline:3px solid var(--gold);outline-offse
 .bar nav{display:flex;gap:clamp(10px,2vw,24px);flex-wrap:wrap;font-size:14px;font-weight:600}.bar nav a{color:#526477;text-decoration:none}.bar nav a:hover{color:var(--accent)}
 .sw{font:inherit;font-size:13px;font-weight:700;border:1px solid #d5dfe5;background:#f7f9fa;color:var(--navy);border-radius:999px;padding:7px 17px;cursor:pointer;white-space:nowrap;transition:.2s}.sw:hover{background:var(--navy);border-color:var(--navy);color:#fff}
 header.hero{position:relative;isolation:isolate;overflow:hidden;margin:38px 0 30px;padding:62px clamp(26px,6vw,72px) 52px;border-radius:26px;background:linear-gradient(118deg,#10243a 0%,#173c50 58%,#1a5b61 100%);color:#fff;box-shadow:0 22px 55px rgba(16,36,58,.16)}
+.hero-grid{display:grid;grid-template-columns:minmax(0,1.55fr) minmax(255px,.8fr);align-items:center;gap:clamp(28px,5vw,62px)}
+.hero-main{min-width:0}.hero-kicker{margin:0 0 15px;color:#e4c995;font-size:11px;font-weight:700;letter-spacing:.11em}
+html[data-lang="fa"] .hero-kicker{font-size:13px;letter-spacing:0}
+.hero-actions{display:flex;flex-wrap:wrap;gap:10px;margin-top:26px}
+.hero-link{display:inline-flex;align-items:center;gap:10px;padding:9px 16px;border-radius:999px;text-decoration:none;font-size:13px;font-weight:700;transition:background .2s,border-color .2s,transform .2s}
+.hero-link:hover{transform:translateY(-2px);color:#fff}
+.hero-link.primary{background:#e4c995;color:#142b3c;border:1px solid #e4c995}
+.hero-link.primary:hover{background:#f0dcb4;color:#142b3c}
+.hero-link.secondary{color:#f4f7f8;border:1px solid rgba(255,255,255,.32);background:rgba(255,255,255,.055)}
+.hero-link.secondary:hover{background:rgba(255,255,255,.13)}
+.hero-panel{position:relative;padding:24px 22px 20px;border:1px solid rgba(255,255,255,.18);border-radius:19px;background:linear-gradient(145deg,rgba(255,255,255,.12),rgba(255,255,255,.045));box-shadow:inset 0 1px rgba(255,255,255,.12);backdrop-filter:blur(8px)}
+.panel-mark{position:absolute;inset-inline-end:18px;top:8px;color:rgba(236,214,174,.12);font-size:84px;line-height:1;font-weight:800;pointer-events:none}
+.panel-label{position:relative;margin-bottom:17px;color:#e6d2ac;font-size:11px;font-weight:800;letter-spacing:.12em}
+html[data-lang="fa"] .panel-label{font-size:13px;letter-spacing:0}
+.focus-item{position:relative;display:flex;gap:13px;align-items:flex-start;padding:13px 0;border-top:1px solid rgba(255,255,255,.13)}
+.focus-no{flex:0 0 27px;color:#dfc28d;font:700 11px "Source Serif 4",Georgia,serif;padding-top:3px}
+.focus-item b{display:block;color:#fff;font-size:13px;line-height:1.7}
+.focus-item small{display:block;color:#c5d4da;font-size:11px;line-height:1.7;margin-top:2px}
+
 header.hero:after{content:"";position:absolute;z-index:-1;width:390px;height:390px;border:1px solid rgba(226,201,151,.25);border-radius:50%;inset-inline-end:-145px;top:-190px;box-shadow:0 0 0 34px rgba(255,255,255,.025),0 0 0 70px rgba(255,255,255,.02)}
 header.hero:before{content:"پروفایل حرفه‌ای";display:inline-block;margin-bottom:18px;padding:5px 13px;border:1px solid rgba(226,201,151,.45);border-radius:999px;color:#e8d5ae;font-size:12px}
 html[data-lang="en"] header.hero:before{content:"PROFESSIONAL PROFILE";letter-spacing:.13em}
@@ -79,12 +98,43 @@ ul.plain ul{margin:8px 0;padding-inline-start:22px;list-style:disc;color:#4b5e70
 footer{padding:34px 0 50px;background:linear-gradient(115deg,#10243a,#174452);color:#dce7eb;font-size:13px;text-align:center;border-top:3px solid var(--gold)}
 .ltr{direction:ltr;unicode-bidi:embed;text-align:left}
 @media(max-width:700px){.wrap{padding-left:18px;padding-right:18px}.bar .wrap{align-items:flex-start;gap:10px}.bar nav{gap:7px 13px;font-size:12px}.sw{padding:6px 12px;font-size:12px}header.hero{margin:20px 0 22px;padding:40px 24px 34px;border-radius:19px}header.hero:after{width:270px;height:270px;inset-inline-end:-150px;top:-145px}.hero h1{font-size:clamp(30px,8vw,43px)}.hero .sub{font-size:15px}.fields{gap:7px;margin-top:22px}.fields li{font-size:12px;padding:4px 10px}section{padding:27px 17px 29px;margin-bottom:17px;border-radius:16px}#about p{padding:14px 15px} .card{padding:18px 16px;border-radius:12px}.tl li{padding-inline:17px}}
+
+/* Editorial layout refinements */
+.bar .brand{display:flex;align-items:center;gap:9px;flex:0 0 auto;color:var(--navy);text-decoration:none;font-size:13px;font-weight:800}
+.brand-symbol{display:grid;place-items:center;width:32px;height:32px;border-radius:10px;background:linear-gradient(145deg,#173c50,#1a6667);color:#e8d5ae;font-family:"Vazirmatn",sans-serif;font-size:16px;box-shadow:0 4px 12px rgba(16,36,58,.14)}
+.bar nav{flex:1}
+section{scroll-margin-top:88px}
+#research,#honors{display:grid;grid-template-columns:repeat(2,minmax(0,1fr));gap:16px}
+#research>h2,#honors>h2{grid-column:1/-1;margin-bottom:7px}
+#research .card,#honors .card{margin:0;height:100%}
+#research .card h3,#honors .card h3{display:flex;align-items:center;gap:10px}
+#research .card h3:before,#honors .card h3:before{content:"";display:inline-block;width:7px;height:7px;flex:0 0 7px;border-radius:50%;background:var(--gold);box-shadow:0 0 0 4px rgba(184,149,88,.12)}
+#works ul.plain{display:grid;grid-template-columns:repeat(2,minmax(0,1fr));column-gap:30px}
+#works ul.plain>li{break-inside:avoid;padding:13px 0}
+#career .tl{padding-block:5px}
+#career .tl li{line-height:1.9}
+#career .tl b{font-size:14px;letter-spacing:.01em}
+#profiles .plain{display:grid;grid-template-columns:repeat(2,minmax(0,1fr));gap:0 24px}
+footer .wrap{display:flex;justify-content:center;align-items:center;gap:12px}
+footer .wrap:before{content:"";width:24px;height:1px;background:#d7bd8e}
+footer .wrap:after{content:"";width:24px;height:1px;background:#d7bd8e}
+@media(max-width:760px){
+ .bar .wrap{flex-wrap:wrap}.bar .brand{order:0}.bar nav{order:2;flex-basis:100%}.sw{order:1}
+ .hero-grid{grid-template-columns:1fr;gap:25px}.hero-panel{max-width:none}
+ #research,#honors{grid-template-columns:1fr;gap:12px}
+ #research>h2,#honors>h2{grid-column:1}
+ #works ul.plain{grid-template-columns:1fr}
+ #profiles .plain{grid-template-columns:1fr}
+}
+@media(max-width:430px){.hero-panel{padding:20px 17px}.hero-actions{gap:8px}.hero-link{font-size:12px;padding:8px 13px}}
+
 @media(prefers-reduced-motion:reduce){html{scroll-behavior:auto}.card,.sw{transition:none}.card:hover{transform:none}}
 </style>
 </head>
 <body>
 
 <div class="bar"><div class="wrap">
+  <a class="brand" href="#" aria-label="Dr. Aliakbar Khormooji home"><span class="brand-symbol" aria-hidden="true">خ</span><span lang="fa">دکتر خورموجی</span><span lang="en">Dr. Khormooji</span></a>
   <nav>
     <span lang="fa"><a href="#about">درباره</a> <a href="#career">سوابق</a> <a href="#research">پژوهش</a> <a href="#works">آثار</a> <a href="#honors">فعالیت‌ها</a> <a href="#profiles">پروفایل‌ها</a></span>
     <span lang="en"><a href="#about">About</a> <a href="#career">Career</a> <a href="#research">Research</a> <a href="#works">Publications</a> <a href="#honors">Honors</a> <a href="#profiles">Profiles</a></span>
@@ -95,11 +145,27 @@ footer{padding:34px 0 50px;background:linear-gradient(115deg,#10243a,#174452);co
 <main class="wrap">
 
 <header class="hero">
-  <h1><span lang="fa">دکتر علی‌اکبر خورموجی</span><span lang="en">Dr. Aliakbar Khormooji</span></h1>
-  <p class="sub" lang="fa">متخصص و پژوهشگر در حوزه‌های تدوین ره‌نگاشت فناوری اطلاعات و ره‌نگاشت تکنولوژی، مدیریت فناوری اطلاعات، مدیریت دانش، حسابرسی فناوری اطلاعات و مشاوره در طراحی سیستم‌های سازمانی نوین و مبتنی بر هوش مصنوعی</p>
-  <p class="sub" lang="en">Specialist and researcher in IT and technology roadmapping, information technology management, knowledge management, IT auditing, and consulting on the design of modern AI-enabled organizational systems</p>
-  <ul class="fields" lang="fa"><li>مدیریت فناوری اطلاعات</li><li>آینده‌پژوهی</li><li>آینده‌نگاری</li><li>تدوین ره‌نگاشت</li><li>حسابرسی فناوری اطلاعات</li><li>مدیریت دانش</li></ul>
-  <ul class="fields" lang="en"><li>IT management</li><li>Futures studies</li><li>Foresight</li><li>Roadmap development</li><li>IT auditing</li><li>Knowledge management</li></ul>
+  <div class="hero-grid">
+    <div class="hero-main">
+      <div class="hero-kicker"><span lang="fa">پژوهش، راهبرد و اطمینان‌بخشی سازمانی</span><span lang="en">RESEARCH · STRATEGY · ORGANIZATIONAL ASSURANCE</span></div>
+      <h1><span lang="fa">دکتر علی‌اکبر خورموجی</span><span lang="en">Dr. Aliakbar Khormooji</span></h1>
+      <p class="sub" lang="fa">متخصص و پژوهشگر در حوزه‌های تدوین ره‌نگاشت فناوری اطلاعات و ره‌نگاشت تکنولوژی، مدیریت فناوری اطلاعات، مدیریت دانش، حسابرسی فناوری اطلاعات و مشاوره در طراحی سیستم‌های سازمانی نوین و مبتنی بر هوش مصنوعی</p>
+      <p class="sub" lang="en">Specialist and researcher in IT and technology roadmapping, information technology management, knowledge management, IT auditing, and consulting on the design of modern AI-enabled organizational systems</p>
+      <ul class="fields" lang="fa"><li>مدیریت فناوری اطلاعات</li><li>آینده‌پژوهی</li><li>آینده‌نگاری</li><li>تدوین ره‌نگاشت</li><li>حسابرسی فناوری اطلاعات</li><li>مدیریت دانش</li></ul>
+      <ul class="fields" lang="en"><li>IT management</li><li>Futures studies</li><li>Foresight</li><li>Roadmap development</li><li>IT auditing</li><li>Knowledge management</li></ul>
+      <div class="hero-actions">
+        <a class="hero-link primary" href="#career"><span lang="fa">مرور سوابق حرفه‌ای</span><span lang="en">Explore career</span><span aria-hidden="true">↙</span></a>
+        <a class="hero-link secondary" href="#profiles"><span lang="fa">پروفایل‌های علمی</span><span lang="en">Scholarly profiles</span></a>
+      </div>
+    </div>
+    <aside class="hero-panel" aria-label="Professional focus">
+      <div class="panel-mark" aria-hidden="true">خ</div>
+      <div class="panel-label"><span lang="fa">محورهای حرفه‌ای</span><span lang="en">PROFESSIONAL FOCUS</span></div>
+      <div class="focus-item"><span class="focus-no">01</span><div><b lang="fa">راهبرد فناوری و آینده‌نگاری</b><b lang="en">Technology strategy & foresight</b><small lang="fa">تدوین و توسعه ره‌نگاشت</small><small lang="en">Roadmap development</small></div></div>
+      <div class="focus-item"><span class="focus-no">02</span><div><b lang="fa">حسابرسی و راهبری فناوری اطلاعات</b><b lang="en">IT audit & governance</b><small lang="fa">کنترل، ریسک و اطمینان‌بخشی</small><small lang="en">Controls, risk & assurance</small></div></div>
+      <div class="focus-item"><span class="focus-no">03</span><div><b lang="fa">مدیریت دانش و نوآوری</b><b lang="en">Knowledge management & innovation</b><small lang="fa">مدل‌ها و روش‌شناسی‌های سازمانی</small><small lang="en">Organizational models & methodologies</small></div></div>
+    </aside>
+  </div>
 </header>
 
 <section id="about">
