@@ -347,20 +347,25 @@ footer .wrap{min-width:0;flex-wrap:wrap}
 body{background:radial-gradient(ellipse at 8% 12%,rgba(57,127,194,.10),transparent 32%),radial-gradient(ellipse at 92% 38%,rgba(22,160,160,.075),transparent 30%),var(--bg)}
 header.hero{
  background:
-  radial-gradient(ellipse at 16% 16%,rgba(255,255,255,.23),transparent 28%),
-  radial-gradient(ellipse at 82% 18%,rgba(165,205,255,.20),transparent 30%),
-  radial-gradient(ellipse at 50% 112%,rgba(22,160,160,.34),transparent 48%),
-  radial-gradient(ellipse at 8% 88%,rgba(215,182,117,.20),transparent 34%),
-  linear-gradient(122deg,#2864C7 0%,#2459B2 52%,#167F9C 100%);
- border:1px solid rgba(255,255,255,.42);
- box-shadow:0 24px 62px rgba(31,78,157,.27),inset 0 1px 0 rgba(255,255,255,.42),inset 0 -18px 42px rgba(12,48,112,.10);
+  radial-gradient(ellipse at 14% 12%,rgba(255,255,255,.32),transparent 26%),
+  radial-gradient(ellipse at 82% 18%,rgba(174,229,255,.24),transparent 30%),
+  radial-gradient(ellipse at 54% 112%,rgba(28,205,151,.42),transparent 48%),
+  radial-gradient(ellipse at 8% 88%,rgba(238,204,130,.24),transparent 34%),
+  linear-gradient(122deg,#2059B4 0%,#126C85 48%,#087A61 100%);
+ border:1px solid rgba(223,255,242,.62);
+ box-shadow:0 28px 70px rgba(10,83,83,.34),inset 0 2px 0 rgba(255,255,255,.58),inset 0 -20px 48px rgba(4,54,50,.16),0 0 34px rgba(35,190,145,.19);
 }
 header.hero:after{border-color:rgba(255,235,190,.52);box-shadow:0 0 0 36px rgba(255,255,255,.075),0 0 0 74px rgba(255,255,255,.038),0 0 42px rgba(190,218,255,.10)}
 .hero h1{color:#F5D58E;text-shadow:0 2px 12px rgba(14,39,86,.22),0 0 22px rgba(255,225,157,.12)}
 .hero-kicker,.panel-label{color:#FFF0C9}
 header.hero:before{color:#FFE7B2;border-color:rgba(255,225,164,.72);background:rgba(255,255,255,.075)}
-.hero-panel{border-color:rgba(255,231,184,.48);background:linear-gradient(150deg,rgba(255,255,255,.22),rgba(255,255,255,.085));box-shadow:inset 0 1px 0 rgba(255,255,255,.22),0 12px 28px rgba(20,65,100,.10)}
+.hero-panel{border-color:rgba(218,255,239,.66);background:linear-gradient(145deg,rgba(255,255,255,.30),rgba(8,104,84,.24) 55%,rgba(255,255,255,.11));box-shadow:inset 0 2px 0 rgba(255,255,255,.40),inset 0 -14px 28px rgba(0,62,52,.14),0 14px 34px rgba(0,57,54,.22),0 0 26px rgba(58,220,165,.15);backdrop-filter:blur(12px)}
 .focus-no{color:#FFE0A0}.focus-item{border-top-color:rgba(255,238,205,.25)}
+.focus-grid{display:grid;grid-template-columns:repeat(2,minmax(0,1fr));gap:10px}
+.focus-chip{display:flex;flex-direction:column;align-items:center;justify-content:center;min-height:45px;padding:8px 10px;border:1px solid rgba(220,255,239,.42);border-radius:13px;background:linear-gradient(140deg,rgba(255,255,255,.24),rgba(10,115,88,.27));color:#FFF4D6;font-weight:700;text-align:center;box-shadow:inset 0 1px 0 rgba(255,255,255,.30),0 5px 15px rgba(0,50,48,.15);text-shadow:0 1px 8px rgba(0,42,42,.24)}
+.focus-chip:last-child{grid-column:1/-1}
+.focus-chip span[lang="en"]{font-size:11px;font-weight:500;opacity:.88}
+@media(max-width:760px){.focus-grid{gap:8px}.focus-chip{min-height:42px;padding:7px 8px;font-size:12px}}
 .hero-actions{gap:12px}
 .hero-link{min-width:190px;min-height:46px;justify-content:center;padding:10px 20px;border-radius:13px;letter-spacing:0;box-shadow:0 5px 14px rgba(17,54,86,.10)}
 .hero-link.primary{background:linear-gradient(135deg,#F1D79F,#D7B675);border-color:#F1D79F;color:#25445F}
@@ -402,23 +407,24 @@ footer{background:linear-gradient(115deg,#2456A6,#167F91 72%,#16A0A0);border-top
 <header class="hero">
   <div class="hero-grid">
     <div class="hero-main">
-      <div class="hero-kicker"><span lang="fa">پژوهش، راهبرد و اطمینان‌بخشی سازمانی</span><span lang="en">RESEARCH · STRATEGY · ORGANIZATIONAL ASSURANCE</span></div>
+      <div class="hero-kicker"><span lang="fa">اطمینان و تضمین مستمر سازمانی</span><span lang="en">ORGANIZATIONAL CONTINUOUS ASSURANCE</span></div>
       <h1><span lang="fa">دکتر علی‌اکبر خورموجی</span><span lang="en">Dr. Aliakbar Khormooji</span></h1>
       <p class="sub" lang="fa">متخصص و پژوهشگر در حوزه‌های تدوین ره‌نگاشت فناوری اطلاعات و ره‌نگاشت تکنولوژی، مدیریت فناوری اطلاعات، مدیریت دانش، حسابرسی فناوری اطلاعات و مشاوره در طراحی سیستم‌های سازمانی نوین و مبتنی بر هوش مصنوعی</p>
       <p class="sub" lang="en">Specialist and researcher in IT and technology roadmapping, information technology management, knowledge management, IT auditing, and consulting on the design of modern AI-enabled organizational systems</p>
       <div class="fields specialties" lang="fa"><div class="specialty-row"><a class="specialty-pill" href="#about">مدیریت فناوری اطلاعات</a><a class="specialty-pill" href="#roadmapping-fa">تدوین ره‌نگاشت فناوری اطلاعات</a><a class="specialty-pill" href="#roadmapping-fa">آینده‌نگاری</a><a class="specialty-pill" href="#works">آینده‌پژوهی</a></div><div class="specialty-row"><a class="specialty-pill" href="#foresight-review-fa">داوری مقالات</a><a class="specialty-pill" href="#knowledge-model-fa">مدیریت دانش</a><a class="specialty-pill" href="#career">حسابرسی فناوری اطلاعات</a><a class="specialty-pill" href="#continuous-assurance-fa">طراحی سیستم‌ها</a></div></div>
       <div class="fields specialties" lang="en"><div class="specialty-row"><a class="specialty-pill" href="#about">IT management</a><a class="specialty-pill" href="#roadmapping-en">Technology roadmapping</a><a class="specialty-pill" href="#roadmapping-en">Foresight</a><a class="specialty-pill" href="#works">Futures studies</a></div><div class="specialty-row"><a class="specialty-pill" href="#foresight-review-en">Article reviewing</a><a class="specialty-pill" href="#knowledge-model-en">Knowledge management</a><a class="specialty-pill" href="#career">IT auditing</a><a class="specialty-pill" href="#continuous-assurance-en">Systems design</a></div></div>
-      <div class="hero-actions">
-        <a class="hero-link primary" href="#career"><span lang="fa">مرور سوابق حرفه‌ای</span><span lang="en">Explore career</span><span aria-hidden="true">↙</span></a>
-        <a class="hero-link secondary" href="#profiles"><span lang="fa">پروفایل‌های علمی</span><span lang="en">Scholarly profiles</span></a>
-      </div>
     </div>
     <aside class="hero-panel" aria-label="Professional focus">
-      
       <div class="panel-label"><span lang="fa">محورهای حرفه‌ای</span><span lang="en">PROFESSIONAL FOCUS</span></div>
-      <div class="focus-item"><span class="focus-no">01</span><div><b lang="fa">راهبرد فناوری و آینده‌نگاری</b><b lang="en">Technology strategy & foresight</b><small lang="fa">تدوین و توسعه ره‌نگاشت</small><small lang="en">Roadmap development</small></div></div>
-      <div class="focus-item"><span class="focus-no">02</span><div><b lang="fa">حسابرسی و راهبری فناوری اطلاعات</b><b lang="en">IT audit & governance</b><small lang="fa">کنترل، ریسک و اطمینان‌بخشی</small><small lang="en">Controls, risk & assurance</small></div></div>
-      <div class="focus-item"><span class="focus-no">03</span><div><b lang="fa">مدیریت دانش و نوآوری</b><b lang="en">Knowledge management & innovation</b><small lang="fa">مدل‌ها و روش‌شناسی‌های سازمانی</small><small lang="en">Organizational models & methodologies</small></div></div>
+      <div class="focus-grid">
+        <span class="focus-chip"><span lang="fa">فناوری اطلاعات</span><span lang="en">Information Technology</span></span>
+        <span class="focus-chip"><span lang="fa">هوش مصنوعی</span><span lang="en">Artificial Intelligence</span></span>
+        <span class="focus-chip"><span lang="fa">آینده‌نگاری</span><span lang="en">Foresight</span></span>
+        <span class="focus-chip"><span lang="fa">استراتژی</span><span lang="en">Strategy</span></span>
+        <span class="focus-chip"><span lang="fa">ره‌نگاری</span><span lang="en">Roadmapping</span></span>
+        <span class="focus-chip"><span lang="fa">نوآوری</span><span lang="en">Innovation</span></span>
+        <span class="focus-chip"><span lang="fa">دانش</span><span lang="en">Knowledge</span></span>
+      </div>
     </aside>
   </div>
 </header>
