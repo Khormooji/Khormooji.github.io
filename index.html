@@ -308,6 +308,37 @@ footer .wrap{min-width:0;flex-wrap:wrap}
   .bar nav{gap:8px 13px}
 }
 
+
+/* Justified typography for About and Career sections in both languages */
+#about p[lang="fa"],#about p[lang="en"]{
+  max-width:none;
+  width:100%;
+  text-align:justify;
+  text-justify:inter-word;
+  line-height:2.1;
+  overflow-wrap:break-word;
+}
+#career .tl[lang="fa"],#career .tl[lang="en"]{
+  width:100%;
+  text-align:justify;
+  text-justify:inter-word;
+}
+#career .tl>li{
+  text-align:justify;
+  text-justify:inter-word;
+  line-height:2.05;
+  overflow-wrap:break-word;
+  word-break:normal;
+}
+#career .tl>li>b{
+  text-align:start;
+  margin-bottom:5px;
+}
+@media(max-width:760px){
+  #about p[lang="fa"],#about p[lang="en"]{line-height:2;text-align:justify}
+  #career .tl>li{line-height:2;text-align:justify}
+}
+
 @media(prefers-reduced-motion:reduce){html{scroll-behavior:auto}.card,.sw{transition:none}.card:hover{transform:none}}
 </style>
 </head>
