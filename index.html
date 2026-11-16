@@ -478,17 +478,35 @@ header.hero:after{
   box-shadow:inset 0 1px 0 rgba(255,255,255,.12);
 }
 .specialty-row{
-  color:#FFE2A2;
-  font-size:clamp(12px,1.35vw,15px);
-  font-weight:700;
-  line-height:1.95;
-  text-align:start;
-  text-shadow:0 1px 8px rgba(16,39,76,.18);
+  display:flex;
+  flex-wrap:wrap;
+  justify-content:space-between;
+  align-items:center;
+  gap:8px 10px;
+  width:100%;
+  font-size:clamp(12px,1.25vw,14px);
+  line-height:1.9;
+  text-align:justify;
 }
-.specialty-row span{color:#FFF2D1;padding:0 4px;font-weight:500}
+.specialty-pill{
+  display:inline-flex;
+  align-items:center;
+  justify-content:center;
+  min-height:34px;
+  padding:4px 13px;
+  border:1px solid rgba(255,225,164,.55);
+  border-radius:999px;
+  background:linear-gradient(135deg,rgba(255,255,255,.16),rgba(255,255,255,.075));
+  color:#FFE2A2;
+  font-weight:700;
+  text-align:justify;
+  text-shadow:0 1px 8px rgba(16,39,76,.18);
+  box-shadow:inset 0 1px 0 rgba(255,255,255,.12),0 3px 10px rgba(12,40,82,.07);
+}
 @media(max-width:760px){
-  .fields.specialties{gap:5px;padding:10px 12px;margin-top:16px}
-  .specialty-row{font-size:12px;line-height:2;text-align:justify}
+  .fields.specialties{gap:8px;padding:10px 12px;margin-top:16px}
+  .specialty-row{justify-content:space-between;gap:7px}
+  .specialty-pill{min-height:32px;padding:4px 10px;font-size:11px}
 }
 
 @media(prefers-reduced-motion:reduce){html{scroll-behavior:auto}.card,.sw{transition:none}.card:hover{transform:none}}
@@ -514,7 +532,7 @@ header.hero:after{
       <h1><span lang="fa">دکتر علی‌اکبر خورموجی</span><span lang="en">Dr. Aliakbar Khormooji</span></h1>
       <p class="sub" lang="fa">متخصص و پژوهشگر در حوزه‌های تدوین ره‌نگاشت فناوری اطلاعات و ره‌نگاشت تکنولوژی، مدیریت فناوری اطلاعات، مدیریت دانش، حسابرسی فناوری اطلاعات و مشاوره در طراحی سیستم‌های سازمانی نوین و مبتنی بر هوش مصنوعی</p>
       <p class="sub" lang="en">Specialist and researcher in IT and technology roadmapping, information technology management, knowledge management, IT auditing, and consulting on the design of modern AI-enabled organizational systems</p>
-      <div class="fields specialties" lang="fa"><div class="specialty-row">مدیریت فناوری اطلاعات <span>·</span> تدوین ره‌نگاشت فناوری اطلاعات <span>·</span> آینده‌نگاری</div><div class="specialty-row">آینده‌پژوهی <span>·</span> مدیریت دانش <span>·</span> حسابرسی فناوری اطلاعات <span>·</span> طراحی سیستم‌ها</div></div>
+      <div class="fields specialties" lang="fa"><div class="specialty-row"><span class="specialty-pill">مدیریت فناوری اطلاعات</span><span class="specialty-pill">تدوین ره‌نگاشت فناوری اطلاعات</span><span class="specialty-pill">آینده‌نگاری</span></div><div class="specialty-row"><span class="specialty-pill">آینده‌پژوهی</span><span class="specialty-pill">مدیریت دانش</span><span class="specialty-pill">حسابرسی فناوری اطلاعات</span><span class="specialty-pill">طراحی سیستم‌ها</span></div></div>
       <ul class="fields" lang="en"><li>IT management</li><li>Futures studies</li><li>Foresight</li><li>Roadmap development</li><li>IT auditing</li><li>Knowledge management</li></ul>
       <div class="hero-actions">
         <a class="hero-link primary" href="#career"><span lang="fa">مرور سوابق حرفه‌ای</span><span lang="en">Explore career</span><span aria-hidden="true">↙</span></a>
