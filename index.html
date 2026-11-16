@@ -358,6 +358,7 @@ header.hero{
 header.hero:after{border-color:rgba(255,235,190,.52);box-shadow:0 0 0 36px rgba(255,255,255,.075),0 0 0 74px rgba(255,255,255,.038),0 0 42px rgba(190,218,255,.10)}
 .hero h1{color:#F5D58E;text-shadow:0 2px 12px rgba(14,39,86,.22),0 0 22px rgba(255,225,157,.12)}
 .hero-kicker,.panel-label{color:#FFF0C9}
+.hero-panel .panel-label{text-align:center;width:100%;}
 header.hero:before{color:#FFE7B2;border-color:rgba(255,225,164,.72);background:rgba(255,255,255,.075)}
 .hero-panel{border-color:rgba(218,255,239,.66);background:linear-gradient(145deg,rgba(255,255,255,.30),rgba(8,104,84,.24) 55%,rgba(255,255,255,.11));box-shadow:inset 0 2px 0 rgba(255,255,255,.40),inset 0 -14px 28px rgba(0,62,52,.14),0 14px 34px rgba(0,57,54,.22),0 0 26px rgba(58,220,165,.15);backdrop-filter:blur(12px)}
 .focus-no{color:#FFE0A0}.focus-item{border-top-color:rgba(255,238,205,.25)}
@@ -386,12 +387,15 @@ section:after{background:linear-gradient(90deg,transparent,#D7B675,#16A0A0,trans
 .sw{min-width:104px;min-height:38px;display:inline-flex;align-items:center;justify-content:center;border-color:rgba(215,182,117,.75);background:#fff;color:#2456A6}
 .sw:hover{background:#2456A6;border-color:#2456A6;color:#fff}
 footer{background:linear-gradient(115deg,#2456A6,#167F91 72%,#16A0A0);border-top:4px solid #D7B675}
+.back-to-top{display:inline-flex;align-items:center;justify-content:center;gap:8px;margin-inline-start:14px;padding:8px 16px;border:1px solid rgba(255,231,184,.65);border-radius:999px;background:linear-gradient(135deg,rgba(255,255,255,.22),rgba(4,105,89,.28));color:#FFF4D6;font-weight:700;text-decoration:none;box-shadow:inset 0 1px 0 rgba(255,255,255,.30),0 4px 14px rgba(0,40,50,.16);transition:transform .18s ease,background .18s ease}
+.back-to-top:hover{transform:translateY(-2px);background:linear-gradient(135deg,rgba(255,255,255,.32),rgba(4,125,99,.38))}
+@media(max-width:760px){.back-to-top{margin:10px 0 0}}
 @media(max-width:760px){.fields.specialties{gap:8px;padding:0;margin-top:16px}.specialty-row{grid-template-columns:repeat(4,minmax(0,1fr));gap:6px}.specialty-pill{min-height:38px;padding:4px 3px;font-size:10px;line-height:1.4}.hero-actions{display:grid;grid-template-columns:repeat(2,minmax(0,1fr));gap:9px}.hero-link{min-width:0;width:100%;min-height:44px;padding:9px 10px;font-size:12px}}
 @media(max-width:430px){.hero-actions{grid-template-columns:1fr}.hero-link{min-height:43px}}
 
 </style>
 </head>
-<body>
+<body id="top">
 
 <div class="bar"><div class="wrap">
   <a class="brand" href="#" aria-label="Dr. Aliakbar Khormooji home"><span lang="fa">دکتر خورموجی</span><span lang="en">Dr. Khormooji</span></a>
@@ -415,7 +419,7 @@ footer{background:linear-gradient(115deg,#2456A6,#167F91 72%,#16A0A0);border-top
       <div class="fields specialties" lang="en"><div class="specialty-row"><a class="specialty-pill" href="#about">IT management</a><a class="specialty-pill" href="#roadmapping-en">Technology roadmapping</a><a class="specialty-pill" href="#roadmapping-en">Foresight</a><a class="specialty-pill" href="#works">Futures studies</a></div><div class="specialty-row"><a class="specialty-pill" href="#foresight-review-en">Article reviewing</a><a class="specialty-pill" href="#knowledge-model-en">Knowledge management</a><a class="specialty-pill" href="#career">IT auditing</a><a class="specialty-pill" href="#continuous-assurance-en">Systems design</a></div></div>
     </div>
     <aside class="hero-panel" aria-label="Professional focus">
-      <div class="panel-label"><span lang="fa">محورهای حرفه‌ای</span><span lang="en">PROFESSIONAL FOCUS</span></div>
+      <div class="panel-label"><span lang="fa">محورهای تخصصی</span><span lang="en">AREAS OF SPECIALIZATION</span></div>
       <div class="focus-grid">
         <span class="focus-chip"><span lang="fa">فناوری اطلاعات</span><span lang="en">Information Technology</span></span>
         <span class="focus-chip"><span lang="fa">هوش مصنوعی</span><span lang="en">Artificial Intelligence</span></span>
@@ -712,6 +716,7 @@ footer{background:linear-gradient(115deg,#2456A6,#167F91 72%,#16A0A0);border-top
 
 <footer><div class="wrap">
   <span lang="fa">© دکتر علی‌اکبر خورموجی</span><span lang="en">© Dr. Aliakbar Khormooji</span>
+  <a class="back-to-top" href="#top"><span lang="fa">بازگشت به ابتدای سایت ↑</span><span lang="en">Back to top ↑</span></a>
 </div></footer>
 
 <script>
