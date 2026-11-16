@@ -3,7 +3,7 @@
 <head>
 <meta charset="utf-8">
 <meta name="viewport" content="width=device-width, initial-scale=1">
-<meta name="theme-color" content="#2864C7">
+<meta name="theme-color" content="#10243a">
 <title>دکتر علی‌اکبر خورموجی | مدیریت فناوری اطلاعات و ره‌نگاشت فناوری</title>
 <meta name="author" content="دکتر علی‌اکبر خورموجی">
 <meta name="robots" content="index,follow,max-image-preview:large,max-snippet:-1,max-video-preview:-1">
@@ -147,7 +147,8 @@ footer{padding:34px 0 50px;background:linear-gradient(115deg,#10243a,#174452);co
 section{scroll-margin-top:88px}
 #research,#honors{display:grid;grid-template-columns:repeat(2,minmax(0,1fr));gap:16px}
 #research>h2,#honors>h2{grid-column:1/-1;margin-bottom:7px}
-#research .card,#honors .card{margin:0;height:100%}#research .card h3,#honors .card h3{display:flex;align-items:center;gap:10px}
+#research .card,#honors .card{margin:0;height:100%}
+#research .card h3,#honors .card h3{display:flex;align-items:center;gap:10px}
 #research .card h3:before,#honors .card h3:before{content:"";display:inline-block;width:7px;height:7px;flex:0 0 7px;border-radius:50%;background:var(--gold);box-shadow:0 0 0 4px rgba(184,149,88,.12)}
 #works ul.plain{display:block;width:100%;margin:0;padding:0;list-style:none}
 #works ul.plain[lang="fa"]{direction:rtl;text-align:justify;text-justify:inter-word}
@@ -296,7 +297,8 @@ footer .wrap{min-width:0;flex-wrap:wrap}
 /* Narrow phones: compact controls and readable typography */
 @media(max-width:390px){
   .wrap{padding-left:13px;padding-right:13px}
-  header.hero{padding:27px 16px 21px}  .hero h1{font-size:27px}
+  header.hero{padding:27px 16px 21px}
+  .hero h1{font-size:27px}
   .hero .sub{font-size:13px;line-height:1.95}
   .hero-actions{align-items:stretch}
   .hero-link{justify-content:center;padding:8px 11px;font-size:11px}
@@ -337,179 +339,50 @@ footer .wrap{min-width:0;flex-wrap:wrap}
   #career .tl>li{line-height:2;text-align:justify}
 }
 
+@media(prefers-reduced-motion:reduce){html{scroll-behavior:auto}.card,.sw{transition:none}.card:hover{transform:none}}
 
-/* Artistic azure-turquoise identity and consistent premium controls */
-:root{
-  --navy:#2456A6;
-  --accent:#16A0A0;
-  --gold:#D7B675;
-  --pale-blue:#EAF3F6;
-}
-body{
-  background:
-    radial-gradient(ellipse at 8% 12%,rgba(57,127,194,.10),transparent 32%),
-    radial-gradient(ellipse at 92% 38%,rgba(22,160,160,.075),transparent 30%),
-    var(--bg);
-}
+/* Restored luminous royal-blue identity and individual gold specialty pills */
+:root{--navy:#2456A6;--accent:#16A0A0;--gold:#D7B675;--pale-blue:#EAF3F6}
+body{background:radial-gradient(ellipse at 8% 12%,rgba(57,127,194,.10),transparent 32%),radial-gradient(ellipse at 92% 38%,rgba(22,160,160,.075),transparent 30%),var(--bg)}
 header.hero{
-  background:
-    radial-gradient(ellipse at 12% 88%,rgba(215,182,117,.24),transparent 34%),
-    radial-gradient(ellipse at 92% 8%,rgba(255,255,255,.18),transparent 32%),
-    linear-gradient(122deg,#397FC2 0%,#287FAF 48%,#16A0A0 100%);
-  border:1px solid rgba(255,255,255,.30);
-  box-shadow:0 24px 58px rgba(36,86,166,.20),inset 0 1px 0 rgba(255,255,255,.30);
+ background:
+  radial-gradient(ellipse at 16% 16%,rgba(255,255,255,.23),transparent 28%),
+  radial-gradient(ellipse at 82% 18%,rgba(165,205,255,.20),transparent 30%),
+  radial-gradient(ellipse at 50% 112%,rgba(22,160,160,.34),transparent 48%),
+  radial-gradient(ellipse at 8% 88%,rgba(215,182,117,.20),transparent 34%),
+  linear-gradient(122deg,#2864C7 0%,#2459B2 52%,#167F9C 100%);
+ border:1px solid rgba(255,255,255,.42);
+ box-shadow:0 24px 62px rgba(31,78,157,.27),inset 0 1px 0 rgba(255,255,255,.42),inset 0 -18px 42px rgba(12,48,112,.10);
 }
-.hero h1{
-  color:#F5D58E;
-  text-shadow:0 2px 14px rgba(23,55,83,.22);
-  letter-spacing:-.035em;
-}
+header.hero:after{border-color:rgba(255,235,190,.52);box-shadow:0 0 0 36px rgba(255,255,255,.075),0 0 0 74px rgba(255,255,255,.038),0 0 42px rgba(190,218,255,.10)}
+.hero h1{color:#F5D58E;text-shadow:0 2px 12px rgba(14,39,86,.22),0 0 22px rgba(255,225,157,.12)}
 .hero-kicker,.panel-label{color:#FFF0C9}
-header.hero:before{
-  color:#FFE7B2;
-  border-color:rgba(255,225,164,.72);
-  background:rgba(255,255,255,.075);
-}
-header.hero:after{
-  border-color:rgba(255,226,169,.48);
-  box-shadow:0 0 0 36px rgba(255,255,255,.065),0 0 0 74px rgba(255,255,255,.035);
-}
-.hero-panel{
-  border-color:rgba(255,231,184,.48);
-  background:linear-gradient(150deg,rgba(255,255,255,.22),rgba(255,255,255,.085));
-  box-shadow:inset 0 1px 0 rgba(255,255,255,.22),0 12px 28px rgba(20,65,100,.10);
-}
-.focus-no{color:#FFE0A0}
-.focus-item{border-top-color:rgba(255,238,205,.25)}
+header.hero:before{color:#FFE7B2;border-color:rgba(255,225,164,.72);background:rgba(255,255,255,.075)}
+.hero-panel{border-color:rgba(255,231,184,.48);background:linear-gradient(150deg,rgba(255,255,255,.22),rgba(255,255,255,.085));box-shadow:inset 0 1px 0 rgba(255,255,255,.22),0 12px 28px rgba(20,65,100,.10)}
+.focus-no{color:#FFE0A0}.focus-item{border-top-color:rgba(255,238,205,.25)}
 .hero-actions{gap:12px}
-.hero-link{
-  min-width:190px;
-  min-height:46px;
-  justify-content:center;
-  padding:10px 20px;
-  border-radius:13px;
-  letter-spacing:0;
-  box-shadow:0 5px 14px rgba(17,54,86,.10);
-}
-.hero-link.primary{
-  background:linear-gradient(135deg,#F1D79F,#D7B675);
-  border-color:#F1D79F;
-  color:#25445F;
-}
+.hero-link{min-width:190px;min-height:46px;justify-content:center;padding:10px 20px;border-radius:13px;letter-spacing:0;box-shadow:0 5px 14px rgba(17,54,86,.10)}
+.hero-link.primary{background:linear-gradient(135deg,#F1D79F,#D7B675);border-color:#F1D79F;color:#25445F}
 .hero-link.primary:hover{background:linear-gradient(135deg,#F8E5BB,#E5C98F);color:#203D58}
-.hero-link.secondary{
-  border-color:rgba(255,237,204,.68);
-  background:rgba(255,255,255,.13);
-}
+.hero-link.secondary{border-color:rgba(255,237,204,.68);background:rgba(255,255,255,.13)}
 .hero-link.secondary:hover{background:rgba(255,255,255,.23)}
-.fields li{
-  min-height:34px;
-  display:inline-flex;
-  align-items:center;
-  justify-content:center;
-  border-color:rgba(255,239,211,.42);
-  background:rgba(255,255,255,.12);
-}
-h2{color:#2456A6}
-h2:before{background:linear-gradient(180deg,#D7B675,#16A0A0)}
+.fields.specialties{display:flex;flex-direction:column;align-items:stretch;gap:8px;margin-top:22px;padding:13px 16px;border:1px solid rgba(255,225,164,.42);border-radius:15px;background:linear-gradient(110deg,rgba(255,255,255,.13),rgba(255,255,255,.055));box-shadow:inset 0 1px 0 rgba(255,255,255,.12)}
+.specialty-row{display:flex;flex-wrap:wrap;justify-content:space-between;align-items:center;gap:8px 10px;width:100%;font-size:clamp(12px,1.25vw,14px);line-height:1.9;text-align:justify;text-justify:inter-word}
+.specialty-pill{display:inline-flex;align-items:center;justify-content:center;min-height:34px;padding:4px 13px;border:1px solid rgba(255,225,164,.55);border-radius:999px;background:linear-gradient(135deg,rgba(255,255,255,.16),rgba(255,255,255,.075));color:#FFE2A2;font-weight:700;text-align:justify;text-justify:inter-word;text-shadow:0 1px 8px rgba(16,39,76,.18);box-shadow:inset 0 1px 0 rgba(255,255,255,.12),0 3px 10px rgba(12,40,82,.07)}
+h2{color:#2456A6}h2:before{background:linear-gradient(180deg,#D7B675,#16A0A0)}
 section:after{background:linear-gradient(90deg,transparent,#D7B675,#16A0A0,transparent);opacity:.9}
 #about p{border-inline-start-color:#D7B675}
-.card{border-inline-start-color:rgba(22,160,160,.62)}
-.card:nth-of-type(even){border-inline-start-color:rgba(215,182,117,.95)}
+.card{border-inline-start-color:rgba(22,160,160,.62)}.card:nth-of-type(even){border-inline-start-color:rgba(215,182,117,.95)}
 .card h3,#career .tl b{color:#167C91}
-#research .card h3:before,#honors .card h3:before{
-  background:#D7B675;
-  box-shadow:0 0 0 4px rgba(215,182,117,.19);
-}
-.tl{border-inline-start-color:rgba(22,160,160,.35)}
-.tl li:before{background:#16A0A0;box-shadow:0 0 0 1px rgba(215,182,117,.65)}
+#research .card h3:before,#honors .card h3:before{background:#D7B675;box-shadow:0 0 0 4px rgba(215,182,117,.19)}
+.tl{border-inline-start-color:rgba(22,160,160,.35)}.tl li:before{background:#16A0A0;box-shadow:0 0 0 1px rgba(215,182,117,.65)}
 .bar nav a:hover{color:#167C91}
-.sw{
-  min-width:104px;
-  min-height:38px;
-  display:inline-flex;
-  align-items:center;
-  justify-content:center;
-  border-color:rgba(215,182,117,.75);
-  background:#fff;
-  color:#2456A6;
-}
+.sw{min-width:104px;min-height:38px;display:inline-flex;align-items:center;justify-content:center;border-color:rgba(215,182,117,.75);background:#fff;color:#2456A6}
 .sw:hover{background:#2456A6;border-color:#2456A6;color:#fff}
-footer{
-  background:linear-gradient(115deg,#2456A6,#167F91 72%,#16A0A0);
-  border-top:4px solid #D7B675;
-}
-@media(max-width:760px){
-  .hero-actions{display:grid;grid-template-columns:repeat(2,minmax(0,1fr));gap:9px}
-  .hero-link{min-width:0;width:100%;min-height:44px;padding:9px 10px;font-size:12px}
-}
-@media(max-width:430px){
-  .hero-actions{grid-template-columns:1fr}
-  .hero-link{min-height:43px}
-}
+footer{background:linear-gradient(115deg,#2456A6,#167F91 72%,#16A0A0);border-top:4px solid #D7B675}
+@media(max-width:760px){.fields.specialties{gap:8px;padding:10px 12px;margin-top:16px}.specialty-row{justify-content:space-between;gap:7px}.specialty-pill{min-height:32px;padding:4px 10px;font-size:11px}.hero-actions{display:grid;grid-template-columns:repeat(2,minmax(0,1fr));gap:9px}.hero-link{min-width:0;width:100%;min-height:44px;padding:9px 10px;font-size:12px}}
+@media(max-width:430px){.hero-actions{grid-template-columns:1fr}.hero-link{min-height:43px}}
 
-
-/* Royal blue luminous finish and two-line gold specialty hierarchy */
-header.hero{
-  background:
-    radial-gradient(ellipse at 16% 16%,rgba(255,255,255,.23),transparent 28%),
-    radial-gradient(ellipse at 82% 18%,rgba(165,205,255,.20),transparent 30%),
-    radial-gradient(ellipse at 50% 112%,rgba(22,160,160,.34),transparent 48%),
-    radial-gradient(ellipse at 8% 88%,rgba(215,182,117,.20),transparent 34%),
-    linear-gradient(122deg,#2864C7 0%,#2459B2 52%,#167F9C 100%);
-  border-color:rgba(255,255,255,.42);
-  box-shadow:0 24px 62px rgba(31,78,157,.27),inset 0 1px 0 rgba(255,255,255,.42),inset 0 -18px 42px rgba(12,48,112,.10);
-}
-header.hero:after{
-  border-color:rgba(255,235,190,.52);
-  box-shadow:0 0 0 36px rgba(255,255,255,.075),0 0 0 74px rgba(255,255,255,.038),0 0 42px rgba(190,218,255,.10);
-}
-.hero h1{color:#F5D58E;text-shadow:0 2px 12px rgba(14,39,86,.22),0 0 22px rgba(255,225,157,.12)}
-.fields.specialties{
-  display:flex;
-  flex-direction:column;
-  align-items:stretch;
-  gap:7px;
-  margin-top:22px;
-  padding:13px 16px;
-  border:1px solid rgba(255,225,164,.42);
-  border-radius:15px;
-  background:linear-gradient(110deg,rgba(255,255,255,.13),rgba(255,255,255,.055));
-  box-shadow:inset 0 1px 0 rgba(255,255,255,.12);
-}
-.specialty-row{
-  display:flex;
-  flex-wrap:wrap;
-  justify-content:space-between;
-  align-items:center;
-  gap:8px 10px;
-  width:100%;
-  font-size:clamp(12px,1.25vw,14px);
-  line-height:1.9;
-  text-align:justify;
-}
-.specialty-pill{
-  display:inline-flex;
-  align-items:center;
-  justify-content:center;
-  min-height:34px;
-  padding:4px 13px;
-  border:1px solid rgba(255,225,164,.55);
-  border-radius:999px;
-  background:linear-gradient(135deg,rgba(255,255,255,.16),rgba(255,255,255,.075));
-  color:#FFE2A2;
-  font-weight:700;
-  text-align:justify;
-  text-shadow:0 1px 8px rgba(16,39,76,.18);
-  box-shadow:inset 0 1px 0 rgba(255,255,255,.12),0 3px 10px rgba(12,40,82,.07);
-}
-@media(max-width:760px){
-  .fields.specialties{gap:8px;padding:10px 12px;margin-top:16px}
-  .specialty-row{justify-content:space-between;gap:7px}
-  .specialty-pill{min-height:32px;padding:4px 10px;font-size:11px}
-}
-
-@media(prefers-reduced-motion:reduce){html{scroll-behavior:auto}.card,.sw{transition:none}.card:hover{transform:none}}
 </style>
 </head>
 <body>
@@ -618,3 +491,231 @@ header.hero:after{
     <li>"Telework: a new approach to performing and controlling projects" (in Persian). 1st Specialized Conference for IT Project Managers</li>
     <li>"A review of the requirements, architecture and benefits of cloud virtual banking" (in Persian)</li>
     <li>Designing a Model for Compiling Information Technology Roadmap.(Case Study: Implementing of Dedicated and organizational Virtual Bank in Mobarakeh Steel Company)</li>
+    <li>"Requirements of a secure knowledge management system" (in Persian)</li>
+  </ul>
+</section>
+
+<section id="honors">
+  <h2><span lang="fa">سایر فعالیت‌ها در عرصه‌های مختلف</span><span lang="en">Other Activities Across Various Fields</span></h2>
+
+  <div class="card" lang="fa">
+    <h3>علمی و پژوهشی</h3>
+    <ul class="plain">
+      <li>داور علمی ژورنال <i>Foresight</i> از انتشارات Emerald؛ معتبرترین ژورنال حوزه آینده‌نگاری.</li>
+      <li>همکاری نظارتی در مطالعات و پروژه‌های تحقیقاتی شرکت فولاد مبارکه، از جمله:
+        <ul>
+          <li>فرهنگ و توانمندسازی جهت استقرار سازمان الکترونیک؛</li>
+          <li>دورکاری (کار از راه دور)؛</li>
+          <li>روابط عمومی الکترونیک؛</li>
+        </ul>
+        <p>سه پروژه یادشده با مدیریت و اجرای پروفسور علی‌اکبر جلالی انجام شده‌اند.</p>
+        <ul>
+          <li>مهندسی خواسته‌ها؛</li>
+          <li>سبد فناوری؛</li>
+          <li>مدیریت دانش؛</li>
+          <li>VOIP.</li>
+        </ul>
+      </li>
+      <li>مشارکت در تدوین و توسعه ره‌نگاشت فناوری اطلاعات.</li>
+    </ul>
+  </div>
+  <div class="card" lang="en">
+    <h3>Academic and Research Activities</h3>
+    <ul class="plain">
+      <li>Peer reviewer for <i>Foresight</i>, an Emerald-published journal and a leading journal in the field of futures studies.</li>
+      <li>Supervisory collaboration on research studies and projects at Mobarakeh Steel Company, including:
+        <ul>
+          <li>Culture and empowerment for the establishment of the electronic organization;</li>
+          <li>Teleworking (remote work);</li>
+          <li>Electronic public relations;</li>
+        </ul>
+        <p>The three projects listed above were managed and implemented by Professor Ali Akbar Jalali.</p>
+        <ul>
+          <li>Requirements engineering;</li>
+          <li>Technology portfolio;</li>
+          <li>Knowledge management;</li>
+          <li>VoIP.</li>
+        </ul>
+      </li>
+      <li>Contributed to the development of the Information Technology Roadmap.</li>
+    </ul>
+  </div>
+
+  <div class="card" lang="fa">
+    <h3>سیاسی</h3>
+    <ul class="plain">
+      <li>کاندیداتوری در انتخابات مجلس شورای اسلامی در ادوار مختلف و در حوزه‌های انتخابیه:
+        <ul>
+          <li>شاهین‌شهر، برخوار و میمه (استان اصفهان)</li>
+          <li>دشتی و تنگستان (استان بوشهر)</li>
+          <li>مبارکه (استان اصفهان)</li>
+        </ul>
+      </li>
+      <li>کاندیداتوری انتخابات شورای اسلامی شهر در حوزه انتخابیه شاهین‌شهر.</li>
+    </ul>
+  </div>
+  <div class="card" lang="en">
+    <h3>Political Activities</h3>
+    <ul class="plain">
+      <li>Candidate in various elections to the Iranian Parliament in the following constituencies:
+        <ul>
+          <li>Shahin Shahr, Borkhar and Meymeh (Isfahan Province)</li>
+          <li>Dashti and Tangestan (Bushehr Province)</li>
+          <li>Mobarakeh (Isfahan Province)</li>
+        </ul>
+      </li>
+      <li>Candidate in the Shahin Shahr City Council election.</li>
+    </ul>
+  </div>
+
+  <div class="card" lang="fa">
+    <h3>اجتماعی</h3>
+    <ul class="plain">
+      <li>مدیر کمپین و پویش «همه با هم علیه کرونا» در شهرستان دشتی و مناطق پیرامونی استان بوشهر، در سال‌های ۱۳۹۸ و ۱۳۹۹.</li>
+    </ul>
+  </div>
+  <div class="card" lang="en">
+    <h3>Social Activities</h3>
+    <ul class="plain">
+      <li>Campaign manager for “All Together Against COVID-19” in Dashti County and surrounding areas of Bushehr Province in 2019 and 2020.</li>
+    </ul>
+  </div>
+
+
+  <div class="card" lang="fa">
+    <h3>گواهینامه‌ها و افتخارات حرفه‌ای</h3>
+    <ul class="plain">
+      <li>گواهینامه‌ها و دوره‌های تخصصی در حوزه‌های DBA اوراکل، فیبر نوری، مدیریت، بهره‌وری، نظام‌های مشارکتی و سایر زمینه‌های مرتبط؛ مجموعاً بیش از ۱۸۰۰ نفرساعت آموزش غیرآکادمیک و سازمانی.</li>
+      <li>کارمند نمونه بهره‌وری شرکت فولاد مبارکه در سال‌های ۱۳۸۱ تا ۱۳۸۷، ۱۴۰۲ و ۱۴۰۴.</li>
+      <li>پیشنهاددهنده برتر و بهترین ارائه‌کننده پیشنهاد در نظام پیشنهادات معاونت تکنولوژی شرکت فولاد مبارکه، ۱۳۸۳.</li>
+    </ul>
+  </div>
+  <div class="card" lang="en">
+    <h3>Professional Certificates and Distinctions</h3>
+    <ul class="plain">
+      <li>Certificates and specialized training in Oracle DBA, fiber optics, management, productivity, participatory systems, and other related areas; more than 1,800 person-hours of non-academic and organizational training in total.</li>
+      <li>Recognized as a Productivity Model Employee at Mobarakeh Steel Company in 2002–2008, 2023, and 2025.</li>
+      <li>Top contributor and best proposal presenter in the Suggestion System of the Technology Deputy at Mobarakeh Steel Company, 2004.</li>
+    </ul>
+  </div>
+
+  <div class="card" lang="fa">
+    <h3>ورزشی</h3>
+    <ul class="plain">
+      <li>مربی تنیس روی میز (گرید: درجه ۳).</li>
+      <li>قهرمانی در رده‌های نوجوانان، جوانان و زیر ۲۰ سال استان خوزستان در رشته تنیس روی میز، طی سال‌های ۱۳۶۷ تا ۱۳۷۳.</li>
+      <li>کسب مدال برنز مسابقات کشوری جوانان ایران، کرمانشاه، ۱۳۷۲.</li>
+      <li>راه‌یابی به جمع ۸ نفر برتر بخش انفرادی مسابقات کشوری نوجوانان ایران، شیراز، ۱۳۷۰.</li>
+      <li>قهرمانی مسابقات تنیس روی میز صنعت فولاد کشور، ۱۳۹۲.</li>
+    </ul>
+  </div>
+  <div class="card" lang="en">
+    <h3>Sports</h3>
+    <ul class="plain">
+      <li>Table tennis coach (Grade 3).</li>
+      <li>Champion in the junior, youth, and under-20 categories of Khuzestan Province in table tennis, 1988–1994.</li>
+      <li>Bronze medalist at the Iranian National Youth Championships, Kermanshah, 1993.</li>
+      <li>Reached the singles top eight at the Iranian National Junior Championships, Shiraz, 1991.</li>
+      <li>Champion of the National Steel Industry Table Tennis Championship, 2013.</li>
+    </ul>
+  </div>
+
+  <div class="card" lang="fa">
+    <h3>هنری</h3>
+    <ul class="plain">
+      <li>کسب مقام اول مسابقات تئاتر دانش‌آموزی در سطح شهرستان، ۱۳۶۸.</li>
+    </ul>
+  </div>
+  <div class="card" lang="en">
+    <h3>Arts</h3>
+    <ul class="plain">
+      <li>First place in the county-level student theatre competition, 1989.</li>
+    </ul>
+  </div>
+
+  <div class="card" lang="fa">
+    <h3>فرهنگی و رسانه‌ای</h3>
+    <ul class="plain">
+      <li>تولید پادکست در موضوعات عشقان، عرفان، آفرینش، هستی، ماوراء، کائنات، فلسفه و جهان‌بینی عشق، اخلاق، اجتماع و...</li>
+    </ul>
+  </div>
+  <div class="card" lang="en">
+    <h3>Cultural and Media Activities</h3>
+    <ul class="plain">
+      <li>Podcast production on love, mysticism, creation, existence, metaphysics, the cosmos, philosophy and the philosophy of love, ethics, society, and related topics.</li>
+    </ul>
+  </div>
+
+  <div class="card" lang="fa">
+    <h3>سوابق برنامه‌نویسی پروژه‌های نرم‌افزاری</h3>
+    <ul class="plain">
+      <li>«پزشک الکترونیکی» (۱۳۷۶ تا ۱۳۷۷)، با استفاده از FoxPro: سامانه‌ای مبتنی بر محتوای مرجع پزشکی برای تطبیق ویژگی‌ها و علائم بیمار با اطلاعات مرجع و کمک به تشخیص بیماری. این پروژه مبتنی بر هوش مصنوعی نبود، اما برخی قابلیت‌های مشابه را به‌صورت شبیه‌سازی‌شده بازنمایی می‌کرد.</li>
+      <li>سیستم جامع آموزشی و دانشگاهی دانشگاه شیلات بوشهر (۱۳۷۸)، با استفاده از FoxPro؛ با نقش برنامه‌نویس ناظر و مسئول نهایی‌سازی سیستم.</li>
+      <li>طراحی، برنامه‌نویسی و پیاده‌سازی سامانه آموزش الکترونیکی با Microsoft .NET 2003 (۱۳۸۴)، شامل ثبت‌نام، مدیریت دروس، محتوای آموزشی، آزمون آنلاین و ارزیابی فراگیر؛ با استفاده محدود.</li>
+    </ul>
+  </div>
+  <div class="card" lang="en">
+    <h3>Software Development and Programming Experience</h3>
+    <ul class="plain">
+      <li>“Electronic Physician” (1997–1998), developed using FoxPro: a system based on medical reference content to match patient characteristics and symptoms with reference information and support disease diagnosis. The project was not based on artificial intelligence; rather, it simulated some similar capabilities.</li>
+      <li>Comprehensive Educational and University Information System for Bushehr Fisheries University (1999), developed using FoxPro; served as the supervising programmer and had responsibility for finalizing the system.</li>
+      <li>Designed, programmed, and implemented an e-learning system using Microsoft .NET 2003 (2005), including registration, course management, learning content, online examinations, and learner assessment; used on a limited basis.</li>
+    </ul>
+  </div>
+
+  <div class="card" lang="fa">
+    <h3>مهارت‌ها و توانمندی‌های فنی</h3>
+    <ul class="plain">
+      <li>برنامه‌نویسی و زبان‌ها: FoxPro، C، Pascal، Delphi، COBOL، BASIC و Turbo Prolog (هوش مصنوعی).</li>
+      <li>پایگاه داده: طراحی پایگاه داده، معماری داده، طراحی جداول و روابط و نرمال‌سازی؛ آشنایی و کار با Oracle و MySQL.</li>
+      <li>تحلیل داده و ابزارها: SPSS، Power BI و Excel.</li>
+      <li>فناوری و زیرساخت: شبکه، امنیت اطلاعات و شبکه و مدیریت ریسک فناوری اطلاعات.</li>
+      <li>چارچوب‌ها و استانداردها: آشنایی با COBIT، ITIL و ISO/IEC 27001؛ آشنایی با مدیریت ریسک سازمانی؛ تدریس چارچوب COSO و مدیریت ریسک.</li>
+      <li>ارزیابی تعالی سازمانی: گذراندن دوره تربیت ارزیاب تعالی سازمانی بر مبنای مدل تعالی ملی ایران.</li>
+      <li>شبکه: گذراندن دوره‌های آموزشی CCNA و CCNP.</li>
+      <li>طراحی و مدیریت وب‌سایت: تجربه کار با Joomla.</li>
+    </ul>
+  </div>
+  <div class="card" lang="en">
+    <h3>Technical Skills and Competencies</h3>
+    <ul class="plain">
+      <li>Programming languages: FoxPro, C, Pascal, Delphi, COBOL, BASIC, and Turbo Prolog (artificial intelligence).</li>
+      <li>Databases: database design, data architecture, table and relationship design, and normalization; familiarity with and experience using Oracle and MySQL.</li>
+      <li>Data analysis and tools: SPSS, Power BI, and Excel.</li>
+      <li>Technology and infrastructure: networking, information and network security, and IT risk management.</li>
+      <li>Frameworks and standards: familiarity with COBIT, ITIL, and ISO/IEC 27001; familiarity with enterprise risk management; teaching experience in the COSO framework and risk management.</li>
+      <li>Organizational excellence assessment: completed the national-model organizational excellence assessor training course.</li>
+      <li>Networking: completed CCNA and CCNP training courses.</li>
+      <li>Website design and management: experience working with Joomla.</li>
+    </ul>
+  </div>
+</section>
+
+<section id="profiles">
+  <h2><span lang="fa">پروفایل‌های علمی</span><span lang="en">Scholarly profiles</span></h2>
+  <ul class="plain ltr">
+    <li>ORCID: <a href="https://orcid.org/0000-0002-4744-5686" rel="me">0000-0002-4744-5686</a></li>
+    <li>Web of Science ResearcherID: C-8591-2019</li>
+    <li>Latin name: Aliakbar Khormooji</li>
+    <!-- Add Google Scholar, LinkedIn, ResearchGate links here and in the JSON-LD "sameAs" list. -->
+  </ul>
+</section>
+
+</main>
+
+<footer><div class="wrap">
+  <span lang="fa">© دکتر علی‌اکبر خورموجی</span><span lang="en">© Dr. Aliakbar Khormooji</span>
+</div></footer>
+
+<script>
+(function(){
+  var h=document.documentElement, b=document.getElementById('sw');
+  function set(l){h.setAttribute('data-lang',l);h.lang=l;h.dir=l==='fa'?'rtl':'ltr';
+    try{localStorage.setItem('lang',l)}catch(e){}}
+  var saved=null;try{saved=localStorage.getItem('lang')}catch(e){}
+  if(location.hash==='#en'||saved==='en'){set('en')}
+  b.addEventListener('click',function(){set(h.getAttribute('data-lang')==='fa'?'en':'fa')});
+})();
+</script>
+</body>
+</html>
