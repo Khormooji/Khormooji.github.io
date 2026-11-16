@@ -3,7 +3,7 @@
 <head>
 <meta charset="utf-8">
 <meta name="viewport" content="width=device-width, initial-scale=1">
-<meta name="theme-color" content="#397FC2">
+<meta name="theme-color" content="#2864C7">
 <title>دکتر علی‌اکبر خورموجی | مدیریت فناوری اطلاعات و ره‌نگاشت فناوری</title>
 <meta name="author" content="دکتر علی‌اکبر خورموجی">
 <meta name="robots" content="index,follow,max-image-preview:large,max-snippet:-1,max-video-preview:-1">
@@ -448,6 +448,49 @@ footer{
   .hero-link{min-height:43px}
 }
 
+
+/* Royal blue luminous finish and two-line gold specialty hierarchy */
+header.hero{
+  background:
+    radial-gradient(ellipse at 16% 16%,rgba(255,255,255,.23),transparent 28%),
+    radial-gradient(ellipse at 82% 18%,rgba(165,205,255,.20),transparent 30%),
+    radial-gradient(ellipse at 50% 112%,rgba(22,160,160,.34),transparent 48%),
+    radial-gradient(ellipse at 8% 88%,rgba(215,182,117,.20),transparent 34%),
+    linear-gradient(122deg,#2864C7 0%,#2459B2 52%,#167F9C 100%);
+  border-color:rgba(255,255,255,.42);
+  box-shadow:0 24px 62px rgba(31,78,157,.27),inset 0 1px 0 rgba(255,255,255,.42),inset 0 -18px 42px rgba(12,48,112,.10);
+}
+header.hero:after{
+  border-color:rgba(255,235,190,.52);
+  box-shadow:0 0 0 36px rgba(255,255,255,.075),0 0 0 74px rgba(255,255,255,.038),0 0 42px rgba(190,218,255,.10);
+}
+.hero h1{color:#F5D58E;text-shadow:0 2px 12px rgba(14,39,86,.22),0 0 22px rgba(255,225,157,.12)}
+.fields.specialties{
+  display:flex;
+  flex-direction:column;
+  align-items:stretch;
+  gap:7px;
+  margin-top:22px;
+  padding:13px 16px;
+  border:1px solid rgba(255,225,164,.42);
+  border-radius:15px;
+  background:linear-gradient(110deg,rgba(255,255,255,.13),rgba(255,255,255,.055));
+  box-shadow:inset 0 1px 0 rgba(255,255,255,.12);
+}
+.specialty-row{
+  color:#FFE2A2;
+  font-size:clamp(12px,1.35vw,15px);
+  font-weight:700;
+  line-height:1.95;
+  text-align:start;
+  text-shadow:0 1px 8px rgba(16,39,76,.18);
+}
+.specialty-row span{color:#FFF2D1;padding:0 4px;font-weight:500}
+@media(max-width:760px){
+  .fields.specialties{gap:5px;padding:10px 12px;margin-top:16px}
+  .specialty-row{font-size:12px;line-height:2;text-align:justify}
+}
+
 @media(prefers-reduced-motion:reduce){html{scroll-behavior:auto}.card,.sw{transition:none}.card:hover{transform:none}}
 </style>
 </head>
@@ -471,7 +514,7 @@ footer{
       <h1><span lang="fa">دکتر علی‌اکبر خورموجی</span><span lang="en">Dr. Aliakbar Khormooji</span></h1>
       <p class="sub" lang="fa">متخصص و پژوهشگر در حوزه‌های تدوین ره‌نگاشت فناوری اطلاعات و ره‌نگاشت تکنولوژی، مدیریت فناوری اطلاعات، مدیریت دانش، حسابرسی فناوری اطلاعات و مشاوره در طراحی سیستم‌های سازمانی نوین و مبتنی بر هوش مصنوعی</p>
       <p class="sub" lang="en">Specialist and researcher in IT and technology roadmapping, information technology management, knowledge management, IT auditing, and consulting on the design of modern AI-enabled organizational systems</p>
-      <ul class="fields" lang="fa"><li>مدیریت فناوری اطلاعات</li><li>آینده‌پژوهی</li><li>آینده‌نگاری</li><li>تدوین ره‌نگاشت</li><li>حسابرسی فناوری اطلاعات</li><li>مدیریت دانش</li></ul>
+      <div class="fields specialties" lang="fa"><div class="specialty-row">مدیریت فناوری اطلاعات <span>·</span> تدوین ره‌نگاشت فناوری اطلاعات <span>·</span> آینده‌نگاری</div><div class="specialty-row">آینده‌پژوهی <span>·</span> مدیریت دانش <span>·</span> حسابرسی فناوری اطلاعات <span>·</span> طراحی سیستم‌ها</div></div>
       <ul class="fields" lang="en"><li>IT management</li><li>Futures studies</li><li>Foresight</li><li>Roadmap development</li><li>IT auditing</li><li>Knowledge management</li></ul>
       <div class="hero-actions">
         <a class="hero-link primary" href="#career"><span lang="fa">مرور سوابق حرفه‌ای</span><span lang="en">Explore career</span><span aria-hidden="true">↙</span></a>
